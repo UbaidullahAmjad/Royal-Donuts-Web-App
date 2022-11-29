@@ -1,0 +1,33 @@
+on:
+  push:
+    branches:
+      - [ "dev-front-ecommerce" ]
+    pull_request:
+      - branches: [ "dev-front-ecommerce" ]
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 14
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14'
+    - name: Install npm and run unittest
+      run: |
+        npm
+        npm test
+      env:
+        CI: true
+    - name: Publish to Github Packages Registry
+      uses: elgohr/Publish-Docker-Github-Action@dev-front-ecommerce
+      with:
+        name: gitmanagement@cplusoft.com/react-royal-donuts/localhost/app-prod:latest
+        registry: docker.pkg.github.com
+        username: ${{ secrets.GITHUB_USERNAME }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        dockerfile: Dockerfile
+        tags: latest

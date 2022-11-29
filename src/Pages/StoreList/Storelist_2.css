@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+.storelistMain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #fff;
+  padding: 0 10rem;
+}
+.leftColumnMain {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.leftColumn {
+  margin: 0;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.inputSearch {
+  border: none;
+  width: 90%;
+}
+.inputSearch:focus {
+  outline: none;
+}
+.searchIcon {
+  font-size: 25px;
+  cursor: pointer;
+}
+.storeCardsMain {
+  background-color: #ffecf3;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 100%;
+  height: 700px;
+  margin-top: 20px;
+}
+.mapsMain {
+  height: 700px;
+  margin-top: 20px;
+}
+.map {
+  width: 700px;
+  height: 600px;
+}
+
+@media screen and (max-width: 595px) {
+  .storelistMain {
+    flex-direction: column;
+    padding: 0;
+    /* width: 300px; */
+    width: 100%;
+    height: initial !important;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  .leftColumn {
+    /* width: 295px; */
+    width: 100%;
+    flex-direction: column;
+  }
+  .leftColumnMain {
+    /* width: 295px; */
+    width: 100%;
+  }
+  .mapsMain {
+    /* width: 280px; */
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  .map {
+    /* height: 300px; */
+    height: 500px;
+    /* width: 272px; */
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 596px) {
+  .storelistMain {
+    flex-direction: column;
+    padding: 0;
+    /* width: 400px; */
+    width: 500px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  .leftColumn {
+    /* width: 400px; */
+    width: 500px;
+    flex-direction: column;
+  }
+  .leftColumnMain {
+    /* width: 400px; */
+    width: 500x;
+  }
+  .mapsMain {
+    /* width: 350px; */
+    width: 500x;
+    padding: 0;
+    height: auto;
+  }
+  .map {
+    /* height: 350px;
+    width: 350px; */
+    height: 450px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .storelistMain {
+    flex-direction: column;
+    padding: 0;
+    width: 700px;
+    margin-top: 5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .leftColumn {
+    width: 700px;
+    flex-direction: column;
+    height: auto;
+  }
+  .leftColumnMain {
+    /* width: 700px; */
+  }
+  .mapsMain {
+    /* width: 480px; */
+    padding: 0;
+    height: auto;
+  }
+  .map {
+    height: 450px;
+    /* width: 480px; */
+    width: 350px;
+  }
+}
+@media screen and (min-width: 889px) {
+  .storelistMain {
+    flex-direction: column;
+    padding: 0;
+    width: 880px;
+    align-items: start;
+  }
+  .leftColumn {
+    width: 880px;
+    flex-direction: row;
+  }
+  .leftColumnMain {
+    width: 40%;
+  }
+  .mapsMain {
+    padding: 0;
+    height: auto;
+    margin-left: 20px;
+  }
+  .map {
+    height: 700px;
+    width: 100%;
+  }
+  .storeCardsMain {
+    width: 70%;
+    padding: 30px 20px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .storelistMain {
+    flex-direction: column;
+    padding: 0;
+    width: 880px;
+    align-items: start;
+  }
+  .leftColumn {
+    width: 880px;
+    flex-direction: row;
+    height: auto;
+  }
+  .leftColumnMain {
+    width: 360px;
+  }
+  .mapsMain {
+    padding: 0;
+    width: 60%;
+    height: auto;
+    margin-left: 20px;
+  }
+  .map {
+    height: 700px;
+    width: 100%;
+  }
+  .storeCardsMain {
+    width: 40%;
+    padding: 30px 20px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .storelistMain {
+    flex-direction: column;
+    padding: 0;
+    width: 1200px;
+    align-items: start;
+  }
+  .leftColumn {
+    width: 1200px;
+    flex-direction: row;
+  }
+  .leftColumnMain {
+    width: 410px;
+  }
+  .mapsMain {
+    width: 60%;
+    padding: 0;
+    height: auto;
+    margin-left: 20px;
+  }
+  .map {
+    height: 700px;
+    width: 100%;
+  }
+  .storeCardsMain {
+    width: 40%;
+    padding: 30px 20px;
+  }
+}
