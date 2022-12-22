@@ -24,11 +24,9 @@ Food Chain
 - Tablets
 - Laptop
 - Desktop
-# Process
-So our team started to work on it from scratch as we are following all the standards related to Software Development. We have dedicated teams that will ensure that all the phases of the Software Development Life Cycle will follow up to mark and in a standard way.
-We have dedicated teams for each separate phase which include Requirement Engineers, Software Designers, Developers, and Quality Assurance Engineers who will make sure that each phase of Software and each requirement of Stakeholder will be validated and provide a quality product through our multi-layer Quality Assurance process.
-This ensures on-time and quality deliverables to our clients by meeting and implementing their every business requirement.
+
 # Modules
+
 ## Super Admin Module
 This is the admin side of “Royal Donuts” which allows the admin to easily manage all the content and features of their website by just logging in. Admin can manage all the features which include.
 - Product Management
